@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    const Find_Prod = (array, N) => <br>
+    { <br>
+    let pro = 1; <br>
+    for(let i=0; i < N; i++) { <br>
+    pro = pro * array[i]; <br>
+    } <br>
+    return pro; <br>
+    }; <br>
+    <hr>
+    const Find_Sum = (array, N) => <br>
+ { <br>
+  let sum = 0; <br>
+for(let i=0; i< array.length; i++) { <br>
+sum = sum + array[i]; <br>
+} <br>
+return sum; <br>
+}; <br>
+<hr>
+const findCount = (N, K, Arr) => <br> 
+{ <br>
+  count = 0 ; <br>
+ for (let i =0 ; i < Arr.length ; i++){ <br>
+  if (K === Arr[i] ) <br>
+  { <br>
+  count = count +1; <br>
+  } <br>
+  } <br>
+  return count; <br>   
+}; <br>
+<hr>
+const findEvenOdd = (N, Arr) => <br>
+{ <br>
+B =[]; <br>
+evenSum =0 ; <br>
+oddSum =0 ; <br>
+for (let i = 0 ; i < Arr.length ; i++){ <br>
+if (Arr[i] % 2 === 0){ <br>
+evenSum += Arr[i] <br>
+B[0]=evenSum; <br>
+} <br>
+else{ <br>
+oddSum += Arr[i] <br>
+B[1]=oddSum; <br>
+} <br>
+} <br>
+return B; <br>   
+}; <br>
+<hr>
+const Find_Num = (array,N,M) => <br>
+{ <br>
+  for(let i=0; i< array.length; i++){ <br>
+    if(array[i]===M){ <br>
+      return "YES" <br>
+    } <br>
+  } <br>
+  return "NO" <br>
+}; <br>
+<hr>
+const highAge = (N, Arr) => <br>
+{ <br>
+ let ArrA=[] <br>
+ for(i=0; i< N;i++){ <br>
+ if(Arr[i]>=18){ <br>
+   ArrA.push(Arr[i]) <br>
+ } <br>
+ } <br>
+ return ArrA; <br>
+}; <br>
+<hr>
+const Inc_Arr = (array,N) => <br>
+{ <br>
+for(let i=0; i< array.length; i++){ <br>
+  p=array[i]+1; <br>
+  console.log(p) <br>
+}   <br>
+}; <br>
+<hr>
+function arrayMin(arr) { <br>
+    let min =arr[0] <br>
+    for(i=1; i < arr.length; i++){ <br>
+      if( arr[i] < min ){ <br>
+        min=arr[i] <br>
+      } <br>
+    } <br>
+  return min; <br>
+  } <br>
+  
+  function arrayMax(arr) { <br>
+   let max =arr[0] <br>
+   for(i=1; i < arr.length; i++){ <br>
+     if(arr[i]>max){ <br>
+       max=arr[i] <br>
+     } <br>
+   } <br>
+  return max; <br>
+  } <br>
+  <hr>
+</body>
+</html>
