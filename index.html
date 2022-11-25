@@ -84,6 +84,25 @@ for(let i=0; i< array.length; i++){ <br>
 }   <br>
 }; <br>
 <hr>
+function Unique_Shirts (arr,N) { <br>
+    let count=0; <br>
+     for(let i=0; i< N; i++){  <br>
+       flag=0 <br>
+       for(let j=0; j< N; j++){ <br>
+         if(i!==j){ <br>
+           if(arr[i]===arr[j]){ <br>
+             flag=1; <br>
+             break; <br>
+           } <br>
+         } <br>
+       } <br>
+       if(!flag){ <br>
+         count +=1 <br>
+       } <br>
+     } <br>
+     return count; <br>
+    } <br>
+<hr>
 function arrayMin(arr) { <br>
     let min =arr[0] <br>
     for(i=1; i < arr.length; i++){ <br>
@@ -104,5 +123,18 @@ function arrayMin(arr) { <br>
   return max; <br>
   } <br>
   <hr>
+  function Birthday_Game(arr,D ,M) { <br>
+    let count = 0; <br>
+   for(let i=0;i<=((arr.length)-M);i++){ <br>
+   let bar_sum = 0; <br>
+   for(let j=0;j< M;j++){ <br>
+   bar_sum += arr[j+i]; <br>
+   } <br>
+       if(bar_sum===D){ <br>
+   count += 1; <br>
+     } <br>
+   }<br>
+ return count; <br>
+ } <br>
 </body>
 </html>
